@@ -67,3 +67,9 @@
     font-weight: bold;
     margin-top: 40px;
 }
+.main p {
+    width: 320px;
+}
+.main p span {
+    color: #10a37f;
+}
