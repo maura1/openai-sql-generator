@@ -1,6 +1,7 @@
+//Configuration of the open ai api in the server
+
 import { Configuration, OpenAIApi } from 'openai';
 import dotenv from 'dotenv';
-
 dotenv.config();
 
 const openaiApiKey = process.env.OPENAI_API_KEY;
@@ -12,6 +13,7 @@ if (!openaiApiKey) {
 const configuration = new Configuration({
     apiKey: openaiApiKey
 });
+//creating a new open ai object
 const openai = new OpenAIApi(configuration);
 
 export default openai;
